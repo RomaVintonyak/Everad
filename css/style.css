@@ -277,6 +277,39 @@ a:focus {
 .mt-2 {
   margin-top: 2rem;
 }
+.text__active {
+  color: #82c08c !important;
+}
+@media (min-width:320px) {
+  .py-6 {
+    padding: 1rem 0;
+  }
+}
+@media (min-width:570px) {
+  .py-6 {
+    padding: 2rem 0;
+  }
+}
+@media (min-width:767px) {
+  .py-6 {
+    padding: 3rem 0;
+  }
+}
+@media (min-width:991px) {
+  .py-6 {
+    padding: 4rem 0;
+  }
+}
+@media (min-width:1199px) {
+  .py-6 {
+    padding: 5rem 0;
+  }
+}
+@media (min-width:1399px) {
+  .py-6 {
+    padding: 6rem 0;
+  }
+}
 /*vars*/
 /*color*/
 /*fonts*/
@@ -431,6 +464,7 @@ a:focus {
   background-color: #f26522;
   font-size: 2.6rem;
   padding: 2rem 0;
+  transition: background-color 0.3s linear, color 0.3s linear;
 }
 @media (min-width:320px) {
   .header__row--btn button {
@@ -460,6 +494,11 @@ a:focus {
   .header__row--btn button {
     font-size: 2.6rem;
   }
+}
+.header__row--btn button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #f26522;
 }
 @media (min-width:320px) {
   .header {
@@ -532,4 +571,118 @@ a:focus {
     font-size: 3rem;
   }
 }
+/*4. product*/
+.product__row {
+  width: 100%;
+}
+.product__row h3 {
+  font-family: inherit;
+  color: #080808;
+  font-weight: bold;
+  line-height: 1.133;
+}
+@media (min-width:320px) {
+  .product__row h3 {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width:570px) {
+  .product__row h3 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width:767px) {
+  .product__row h3 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width:991px) {
+  .product__row h3 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width:1199px) {
+  .product__row h3 {
+    font-size: 3rem;
+  }
+}
+@media (min-width:767px) {
+  .product__row--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.content__collum {
+  width: 100%;
+  padding: 2rem 1rem;
+  border-width: 2px;
+  border-color: #acacac;
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.content__collum picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.content__collum h3 {
+  font-size: 2.2rem;
+  font-family: inherit;
+  color: #8e0000;
+  font-weight: bold;
+  line-height: 1.091;
+  margin-bottom: 3rem;
+}
+.content__collum p {
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #333333;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+.content__collum a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-family: inherit;
+  color: #444444;
+  font-weight: bold;
+  line-height: 1.412;
+}
+.content__collum--baner {
+  width: 100%;
+}
+.content__collum--baner picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (min-width:767px) {
+  .content__collum--baner {
+    width: 48%;
+  }
+}
+@media (min-width:1199px) {
+  .content__collum--baner {
+    width: 30%;
+  }
+}
+@media (min-width:767px) {
+  .content__collum {
+    width: 48%;
+  }
+  .content__collum:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width:1199px) {
+  .content__collum {
+    width: 22%;
+    margin-bottom: 0;
+  }
+}
+/*5. slider*/
 /*# sourceMappingURL=./style.css.map */
