@@ -14,12 +14,23 @@
   text-align: center;
 }
 .mt-6 {
-  margin-top: 6rem;
-  @media @tablet {
+  @media @mobile-xsm{
+    margin-top: 1rem;
+  }
+  @media @mobile-sm{
+    margin-top: 2rem;
+  }
+  @media @mobile{
+    margin-top: 3rem;
+  }
+  @media @tablet{
     margin-top: 4rem;
   }
-  @media @mobile {
-    margin-top: 2rem;
+  @media @notebook{
+    margin-top: 5rem;
+  }
+  @media @lcd{
+    margin-top: 6rem;
   }
 }
 .mt-5 {
@@ -27,9 +38,6 @@
 }
 .mt-4 {
   margin-top: 4rem;
-  @media @mobile {
-    margin-top: 2rem;
-  }
 }
 .mt-3 {
   margin-top: 3rem;

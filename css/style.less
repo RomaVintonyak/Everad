@@ -5,12 +5,12 @@
 @import "vendor/normalize.less";
 
 /*google foonts*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 html{
   font-size: 10px;
 }
 body{
-  font-family: @roboto;
+  font-family: @main;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   color: @black;
@@ -48,3 +48,7 @@ a {
 /*main style block*/
 /*1. intro*/
 @import "block/container.less";
+/*2. header*/
+@import "block/header.less";
+/*3. title*/
+@import "block/title.less";

@@ -1,21 +1,23 @@
 //main: ../style.less
 .container {
-  max-width: 1162px;
+  max-width: 1200px;
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0 auto;
-  @media @notebook {
-    max-width: 1178px;
-  }
-  @media @tablet {
-    max-width: 970px;
-    overflow: hidden;
-  }
-  @media @mobile {
-    max-width: 756px;
+  @media @mobile-xsm {
+    max-width: 300px;
   }
   @media @mobile-sm {
-    max-width: 554px;
+    max-width: 550px;
+  }
+  @media @mobile {
+    max-width: 737px;
+  }
+  @media @tablet {
+    max-width: 971px;
+  }
+  @media @notebook {
+    max-width: 1179px;
   }
 }
