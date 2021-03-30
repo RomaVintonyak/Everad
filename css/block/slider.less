@@ -1,1 +1,55 @@
 //main: ../style.less
+.slider{
+  width: 100%;
+  background-color: @blue-l;
+  &__row{
+    width: 100%;
+    h3{
+        font-family: inherit;
+        color: @white;
+        font-weight: bold;
+        line-height: 0.533;
+        text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35);
+        @media @mobile-xsm{
+          font-size: 1.6rem;
+        }
+        @media @mobile-sm{
+          font-size: 2rem;
+        }
+        @media @mobile{
+          font-size: 2.5rem;
+        }
+        @media @tablet{
+          font-size: 3.5rem;
+        }
+        @media @notebook{
+          font-size: 4.5rem;
+        }
+    }
+  }
+}
+.slider__content{
+  picture{
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  @media @mobile-xsm{
+    width: 100%;
+  }
+  @media @mobile-sm{
+    width: 95%;
+    margin: 0 auto;
+  }
+  @media @mobile{
+    width: 90%;
+  }
+  @media @tablet{
+    width: 85%;
+  }
+  @media @notebook{
+    width: 80%;
+  }
+}
