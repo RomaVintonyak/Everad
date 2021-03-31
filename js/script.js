@@ -4,7 +4,7 @@ jQuery(document).ready(function(){
   var mainSlider = $("#mainSlider");
   mainSlider.slick({
     dots: true,
-    arrows: false,
+    arrows: true,
     infinite: true,
     speed: 1000,
     fade: true,

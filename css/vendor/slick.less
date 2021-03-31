@@ -24,19 +24,19 @@
   height: 100%;
   overflow: hidden;
   @media @mobile-xsm{
-    margin-bottom: 2rem;
-  }
-  @media @mobile-sm{
-    margin-bottom: 3rem;
-  }
-  @media @mobile{
     margin-bottom: 4rem;
   }
-  @media @tablet{
+  @media @mobile-sm{
     margin-bottom: 5rem;
   }
-  @media @notebook{
+  @media @mobile{
     margin-bottom: 6rem;
+  }
+  @media @tablet{
+    margin-bottom: 7rem;
+  }
+  @media @notebook{
+    margin-bottom: 8rem;
   }
 }
 .slick-slide {
@@ -70,7 +70,7 @@
 }
 .slick-dots {
   position: absolute;
-  bottom: 0;
+  bottom: 4%;
   left: 50%;
   z-index: 20;
   transform: translateX(-50%);
@@ -89,7 +89,7 @@
       color: transparent;
       border: 0;
       border-radius: 50%;
-      background-color: rgba(@white, 0.7);
+      background-color: rgba(@white, 0.6);
       transition: background-color 0.2s ease;
       &:focus {
         outline: none;
@@ -130,5 +130,67 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+.slick-arrow{
+  position: absolute;
+  z-index: 10;
+  bottom: 4%;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}
+.slick-prev{
+  border-top: 4px solid @white;
+  border-left: 4px solid @white;
+  transform: rotate(-45deg);
+  @media @mobile-xsm{
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 28%;
+  }
+  @media @mobile-sm{
+    width: 2rem;
+    height: 2rem;
+    left: 33%;
+  }
+  @media @mobile{
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 35%;
+  }
+  @media @tablet{
+    width: 3rem;
+    height: 3rem;
+  }
+}
+.slick-next{
+  border-top: 4px solid @white;
+  border-right: 4px solid @white;
+  transform: rotate(45deg);
+  @media @mobile-xsm{
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 28%;
+  }
+  @media @mobile-sm{
+    width: 2rem;
+    height: 2rem;
+    right: 33%;
+  }
+  @media @mobile{
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 35%;
+  }
+  @media @tablet{
+    width: 3rem;
+    height: 3rem;
   }
 }

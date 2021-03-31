@@ -373,27 +373,27 @@ a:focus {
 }
 @media (min-width:320px) {
   .slick-list {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
 @media (min-width:570px) {
   .slick-list {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 }
 @media (min-width:767px) {
   .slick-list {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 }
 @media (min-width:991px) {
   .slick-list {
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
   }
 }
 @media (min-width:1199px) {
   .slick-list {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
   }
 }
 .slick-slide {
@@ -422,7 +422,7 @@ a:focus {
 }
 .slick-dots {
   position: absolute;
-  bottom: 0;
+  bottom: 4%;
   left: 50%;
   z-index: 20;
   transform: translateX(-50%);
@@ -439,7 +439,7 @@ a:focus {
   color: transparent;
   border: 0;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
   transition: background-color 0.2s ease;
 }
 .slick-dots li button:focus {
@@ -495,6 +495,84 @@ a:focus {
 }
 .slick-dots li:last-child {
   margin-right: 0;
+}
+.slick-arrow {
+  position: absolute;
+  z-index: 10;
+  bottom: 4%;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+}
+.slick-arrow:focus {
+  outline: none;
+}
+.slick-arrow:hover {
+  cursor: pointer;
+}
+.slick-prev {
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  transform: rotate(-45deg);
+}
+@media (min-width:320px) {
+  .slick-prev {
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 28%;
+  }
+}
+@media (min-width:570px) {
+  .slick-prev {
+    width: 2rem;
+    height: 2rem;
+    left: 33%;
+  }
+}
+@media (min-width:767px) {
+  .slick-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 35%;
+  }
+}
+@media (min-width:991px) {
+  .slick-prev {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+.slick-next {
+  border-top: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+  transform: rotate(45deg);
+}
+@media (min-width:320px) {
+  .slick-next {
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 28%;
+  }
+}
+@media (min-width:570px) {
+  .slick-next {
+    width: 2rem;
+    height: 2rem;
+    right: 33%;
+  }
+}
+@media (min-width:767px) {
+  .slick-next {
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 35%;
+  }
+}
+@media (min-width:991px) {
+  .slick-next {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 /*main style block*/
 /*1. intro*/
