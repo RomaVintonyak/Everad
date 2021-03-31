@@ -1014,4 +1014,41 @@ a:focus {
     width: 80%;
   }
 }
+/*6. footer*/
+.footer {
+  width: 100%;
+  padding: 1rem 0;
+}
+.footer__row--content {
+  font-size: 2.2rem;
+  font-family: inherit;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.091;
+}
+@media (min-width:320px) {
+  .footer__row--content {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width:570px) {
+  .footer__row--content {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width:767px) {
+  .footer__row--content {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width:991px) {
+  .footer__row--content {
+    font-size: 2rem;
+  }
+}
+@media (min-width:1199px) {
+  .footer__row--content {
+    font-size: 2.2rem;
+  }
+}
 /*# sourceMappingURL=./style.css.map */

@@ -1,0 +1,29 @@
+//main: ../style.less
+.footer {
+  width: 100%;
+  padding: 1rem 0;
+  &__row {
+    &--content {
+      font-size: 2.2rem;
+      font-family: inherit;
+      color: rgb(51, 51, 51);
+      font-weight: bold;
+      line-height: 1.091;
+      @media @mobile-xsm{
+        font-size: 1.4rem;
+      }
+      @media @mobile-sm{
+        font-size: 1.6rem;
+      }
+      @media @mobile{
+        font-size: 1.8rem;
+      }
+      @media @tablet{
+        font-size: 2rem;
+      }
+      @media @notebook{
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
